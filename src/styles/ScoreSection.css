@@ -1,0 +1,25 @@
+.score-section.container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 25px;
+}
+
+.current-score,
+.best-score {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  border-radius: 9px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+  cursor: default;
+}
+
+.current-score {
+  background: var(--gray);
+}
+
+.best-score {
+  background: var(--green);
+}

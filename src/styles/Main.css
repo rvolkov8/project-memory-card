@@ -1,0 +1,9 @@
+.main.container {
+  grid-row: 2 / 3;
+
+  background: var(--orange-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}

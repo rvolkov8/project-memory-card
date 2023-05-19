@@ -1,0 +1,16 @@
+.footer.container {
+  grid-row: 3 / 4;
+
+  background: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer.content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--white);
+  cursor: pointer;
+}
