@@ -25,6 +25,7 @@ import './styles/Footer.css';
 import './styles/ScoreSection.css';
 import './styles/CardsGrid.css';
 import './styles/Cell.css';
+import './styles/VictoryPopUp.css';
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
@@ -130,6 +131,18 @@ function App() {
     }
   };
 
+  const resetGame = () => {
+    setCurrentScore(0);
+    setFoxesInfo((prevState) => {
+      const newState = [...prevState];
+      // eslint-disable-next-line array-callback-return
+      newState.map((el) => {
+        el.wasPressed = false;
+      });
+      return newState;
+    });
+  };
+
   return (
     <>
       <Header />
@@ -138,6 +151,7 @@ function App() {
         bestScore={bestScore}
         foxesInfo={foxesInfo}
         handleTurnClick={handleTurnClick}
+        resetGame={resetGame}
       />
       <Footer />
     </>

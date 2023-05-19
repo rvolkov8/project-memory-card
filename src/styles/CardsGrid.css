@@ -1,4 +1,5 @@
 .cards-grid.container {
+  position: relative;
   width: 45%;
   height: 690px;
   display: grid;

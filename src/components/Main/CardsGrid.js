@@ -1,7 +1,8 @@
 import Cell from './Cell';
+import VictoryPopUp from './VictoryPopUp';
 
 const CardsGrid = (props) => {
-  const { foxesInfo, handleTurnClick } = props;
+  const { foxesInfo, handleTurnClick, currentScore, resetGame } = props;
 
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -27,7 +28,12 @@ const CardsGrid = (props) => {
     })
   );
 
-  return <div className="cards-grid container">{shuffleArray(cells)}</div>;
+  return (
+    <div className="cards-grid container">
+      {currentScore === 12 && <VictoryPopUp resetGame={resetGame} />}
+      {shuffleArray(cells)}
+    </div>
+  );
 };
 
 export default CardsGrid;
