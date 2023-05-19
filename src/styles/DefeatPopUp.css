@@ -1,0 +1,34 @@
+.defeat-pop-up.container {
+  position: absolute;
+  background-color: #fff8f0c6;
+  right: -5px;
+  left: -5px;
+  bottom: -5px;
+  top: -5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  cursor: default;
+}
+
+.defeat-pop-up.text {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.play-again {
+  background: var(--light-orange);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 15px 40px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+}
+
+.play-again:hover {
+  background: var(--dark-orange);
+}

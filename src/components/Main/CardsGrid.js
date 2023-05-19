@@ -1,8 +1,10 @@
 import Cell from './Cell';
+import DefeatPopUp from './DefeatPopUp';
 import VictoryPopUp from './VictoryPopUp';
 
 const CardsGrid = (props) => {
-  const { foxesInfo, handleTurnClick, currentScore, resetGame } = props;
+  const { foxesInfo, handleTurnClick, currentScore, resetGame, playerLost } =
+    props;
 
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -30,6 +32,7 @@ const CardsGrid = (props) => {
 
   return (
     <div className="cards-grid container">
+      {playerLost === true && <DefeatPopUp resetGame={resetGame} />}
       {currentScore === 12 && <VictoryPopUp resetGame={resetGame} />}
       {shuffleArray(cells)}
     </div>

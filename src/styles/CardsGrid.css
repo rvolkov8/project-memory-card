@@ -1,6 +1,6 @@
 .cards-grid.container {
   position: relative;
-  width: 45%;
+
   height: 690px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

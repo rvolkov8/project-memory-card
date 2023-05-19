@@ -26,6 +26,7 @@ import './styles/ScoreSection.css';
 import './styles/CardsGrid.css';
 import './styles/Cell.css';
 import './styles/VictoryPopUp.css';
+import './styles/DefeatPopUp.css';
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
@@ -35,7 +36,7 @@ function App() {
       name: 'B-day boy',
       picture: bDayBoyPicture,
       id: uuidv4(),
-      wasPressed: true,
+      wasPressed: false,
     },
     {
       name: 'Curious',
@@ -84,6 +85,7 @@ function App() {
     },
     { name: 'Runner', picture: runnerPicture, id: uuidv4(), wasPressed: false },
   ]);
+  const [playerLost, setPlayerLost] = useState(false);
 
   useEffect(() => {
     if (currentScore > bestScore) {
@@ -104,15 +106,7 @@ function App() {
 
   const handleTurnClick = (id) => {
     if (checkIfPressed(id)) {
-      setCurrentScore(0);
-      setFoxesInfo((prevState) => {
-        const newState = [...prevState];
-        // eslint-disable-next-line array-callback-return
-        newState.map((el) => {
-          el.wasPressed = false;
-        });
-        return newState;
-      });
+      setPlayerLost(true);
     } else {
       setFoxesInfo((prevState) => {
         const newState = [...prevState];
@@ -141,6 +135,7 @@ function App() {
       });
       return newState;
     });
+    setPlayerLost(false);
   };
 
   return (
@@ -152,6 +147,7 @@ function App() {
         foxesInfo={foxesInfo}
         handleTurnClick={handleTurnClick}
         resetGame={resetGame}
+        playerLost={playerLost}
       />
       <Footer />
     </>
