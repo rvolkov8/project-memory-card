@@ -7,10 +7,15 @@
   align-items: center;
 }
 
-.footer.content {
+a {
+  text-decoration: none;
+}
+
+.footer.container > a {
   display: flex;
   align-items: center;
   gap: 5px;
   color: var(--white);
   cursor: pointer;
+  font-weight: 700;
 }
