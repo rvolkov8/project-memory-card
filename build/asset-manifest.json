@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/project-memory-card/static/css/main.8ec9416a.css",
+    "main.js": "/project-memory-card/static/js/main.90658dd1.js",
+    "static/media/discoverer-fox.png": "/project-memory-card/static/media/discoverer-fox.947d8e744a35eaacb164.png",
+    "static/media/runner-fox.png": "/project-memory-card/static/media/runner-fox.6a9f7446bb28a0c7e7eb.png",
+    "static/media/sleeper-fox.png": "/project-memory-card/static/media/sleeper-fox.0b4641f79035ce769e40.png",
+    "static/media/b-day-boy-fox.png": "/project-memory-card/static/media/b-day-boy-fox.aaf7548392a178a1c4b0.png",
+    "static/media/learner-fox.png": "/project-memory-card/static/media/learner-fox.24cd618eab79d70a62ab.png",
+    "static/media/self-assured-fox.png": "/project-memory-card/static/media/self-assured-fox.075b5bdd2cf8dcb4d56d.png",
+    "static/media/thoughtful-fox.png": "/project-memory-card/static/media/thoughtful-fox.8c0353e493e8822adae5.png",
+    "static/media/curious-fox.png": "/project-memory-card/static/media/curious-fox.abc1d4a8dfab276c87f1.png",
+    "static/media/winner-fox.png": "/project-memory-card/static/media/winner-fox.d4a4b6c0b395cf7626f6.png",
+    "static/media/fox-logo.png": "/project-memory-card/static/media/fox-logo.d0bb877f0e374fd0a477.png",
+    "static/media/party-animal-fox.png": "/project-memory-card/static/media/party-animal-fox.fe9d615973063ab3b7cb.png",
+    "static/media/grumpy-fox.png": "/project-memory-card/static/media/grumpy-fox.a2321209d8d8c12477e5.png",
+    "static/media/sad-fox.png": "/project-memory-card/static/media/sad-fox.98054491d86812a0258b.png",
+    "index.html": "/project-memory-card/index.html",
+    "main.8ec9416a.css.map": "/project-memory-card/static/css/main.8ec9416a.css.map",
+    "main.90658dd1.js.map": "/project-memory-card/static/js/main.90658dd1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ec9416a.css",
+    "static/js/main.90658dd1.js"
+  ]
+}
